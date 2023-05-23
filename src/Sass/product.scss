@@ -1,0 +1,25 @@
+.product{
+    .product_header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1.5rem;
+    }
+    .basket{
+        position: relative;
+
+        .basket-count{
+            position: absolute;
+            top: -15px;
+            right: -10px;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: red;
+            text-align: center;
+            color: white;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+    }
+}

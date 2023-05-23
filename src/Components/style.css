@@ -1,0 +1,15 @@
+table, th, td {
+    border: 1px solid black;
+  }
+  select{
+    width: 50px;
+    height: 40px;
+  }
+  img{
+    width: 100%;
+  }
+  .imgC {
+    width: 400px;
+    height: 300px;
+  }
+  

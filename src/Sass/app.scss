@@ -1,0 +1,53 @@
+
+.light{
+    background-color: #fff;
+  
+}
+
+.dark{
+    background-color: #000;
+
+   
+
+    .card-bg{
+        background-color: #6665659e; 
+        color: #fff;
+        .nav-link{
+            color: #fff;
+        }
+    }
+    .navbar{
+        background-color: #6665659e !important; 
+        color: #fff !important;
+    }
+    table{
+
+        color: #fff;
+        border: 2px solid #fff;
+
+        th{
+            color: #fff;
+            border: 2px solid #fff;
+        }
+        tr{
+            color:#fff;
+            border: 2px solid #fff;
+        }
+        td{
+            color: white;
+            border: 2px solid #fff;
+        }
+    }
+    .app{
+        background-color: #000;
+    }
+    thead{
+        color: #fff;
+        border: 2px solid #fff;
+    }
+   
+    
+}
+nav{
+   position: fixed;
+}
