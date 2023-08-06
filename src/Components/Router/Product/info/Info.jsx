@@ -2,7 +2,7 @@ import React from 'react'
 import { CloseButton, Modal } from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom'
 
-const Info = ({ show,  id }) => {
+const Info = ({ show , id }) => {
 
     const [getProduct,setGetProduct] = React.useState({
         image:"",
@@ -30,7 +30,7 @@ const Info = ({ show,  id }) => {
 
     return (
         <>
-            <Modal show={show} onHide={() =>   navigate(-1)}>
+            <Modal show={show} onHide={() => navigate(-1)}>
                 <Modal.Header>
                     Info
                     <CloseButton onClick={() => navigate(-1)}/>

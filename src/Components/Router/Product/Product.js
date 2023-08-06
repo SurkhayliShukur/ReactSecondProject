@@ -52,12 +52,6 @@ import { Route, Routes, Link } from "react-router-dom";
 // };
 
 const Product = ({ location, background}) => {
-  // const [product, setProduct] = React.useState([]);
-  // const [info, setInfo] = React.useState(false);
-  // const [id, setId] = React.useState();
-  // const [isLoading, setIsLoading] = React.useState(false);
-  // const [search, setSearch] = React.useState("");
-  // const [basket, setBasket] = React.useState([]);
 
   const { lang } = React.useContext(Context);
 
@@ -109,6 +103,7 @@ const Product = ({ location, background}) => {
   React.useEffect(() => {
     requestFakeApi();
   }, []);
+  console.log(state.id)
 
   return (
     <div className="container">
@@ -147,7 +142,6 @@ const Product = ({ location, background}) => {
               className="btn btn-warning"
               onClick={() => {
                 setState({
-                
                   showBasket: true,
                 });
               }}
@@ -216,7 +210,7 @@ const Product = ({ location, background}) => {
                         style={{ width: "30px", height: "30px" }}
                         checked={state.basket
                           ?.map((product) => product.id)
-                          .includes(item.id)}
+                          .includes(item.id)} 
                         onChange={(e) => {
                           addBasket(e, item);
                         }}
